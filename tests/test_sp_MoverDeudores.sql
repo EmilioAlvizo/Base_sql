@@ -16,3 +16,7 @@ SELECT 'ATRASO', cliente_id, monto_deuda, meses_sin_pagar FROM deudores_atraso
 UNION ALL
 SELECT 'CRITICOS', cliente_id, monto_deuda, meses_sin_pagar FROM deudores_criticos
 ORDER BY tabla, cliente_id;
+
+truncate table deudores_corriente;
+truncate table deudores_atraso;
+truncate table deudores_criticos;
